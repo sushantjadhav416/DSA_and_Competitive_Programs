@@ -14,7 +14,7 @@ namespace Competitive_Programs.Recursion
         {
             if (n == 1)
                 return 0;
-            return n * sum(n - 1);
+            return n * product(n-1);
         }
         public static int product_of_two_num(int x,int y)
         {
@@ -49,12 +49,12 @@ namespace Competitive_Programs.Recursion
            return (n%10)+ sum_dighits(n / 10);
         }
 
-        public static int rev_num(int n)
+        public static string rev_num(int n)
         {
             if (n == 0)
-                return 0;
+                return " ";
 
-            return Convert.ToInt32(""+n%10+rev_num(n/10));
+            return ""+n%10+rev_num(n/10);
 
         }
         public static int Count_0s(int c)
@@ -74,7 +74,7 @@ namespace Competitive_Programs.Recursion
 
             return helper(num / 10, n);
         }
-        public static void Main(string[] args)
+        public static void sum_Main(string[] args)
         {
             int n = Convert.ToInt32(Console.ReadLine());
             int[] arr = { 1, 2, 3, 4 };

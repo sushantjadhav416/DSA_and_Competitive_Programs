@@ -19,7 +19,8 @@ namespace Competitive_Programs.String_programes
                 {
                     p_list.Remove(str[i]);
                 }
-                else{
+                else
+                {
                     p_list.Add(str[i]);
 
                 }

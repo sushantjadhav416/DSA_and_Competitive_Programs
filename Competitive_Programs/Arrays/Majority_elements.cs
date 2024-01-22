@@ -13,12 +13,17 @@ namespace Competitive_Programs.Arrays
 			int res = 0, cnt = 0;
 			foreach (int num in nums)
 			{
-				if (cnt == 0) { 
-					res = num; 
-					++cnt; 
+				if (cnt == 0)
+				{
+					res = num;
+					++cnt;
 				}
-				else if (num == res) ++cnt;
-				else --cnt;
+				else if (num == res)
+				{
+					++cnt;
+				}
+				else 
+					--cnt;
 			}
 			return res;
 		}

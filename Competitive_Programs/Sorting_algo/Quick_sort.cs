@@ -48,7 +48,7 @@ namespace Competitive_Programs.Sorting_algo
 
             int[] arr = { 32, 31, 34, 45, 65, 78, 98, 23 };
 
-            Q_sort(arr,0,arr.Length-1);
+            Q_sort(arr,arr.Length-1,0);
 
             Console.WriteLine("Sorted array:");
             for (int i = 0; i < arr.Length; i++)

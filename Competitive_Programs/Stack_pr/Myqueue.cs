@@ -6,22 +6,24 @@ using System.Threading.Tasks;
 
 namespace Competitive_Programs.Stack_pr
 {
-    internal class MyStack
+    internal class Myqueue
     {
         int[] ar = new int[100];
         int n = 100;
         int top;
-        MyStack()
+        int last;
+        Myqueue()
         {
             top = -1;
+            last = -1;
         }
 
-        public void Inc() 
+        public void Inc()
         {
             top++;
         }
 
-        public  void Push(int val)
+        public void Push(int val)
         {
             if (top >= n - 1)
             {
@@ -30,12 +32,12 @@ namespace Competitive_Programs.Stack_pr
             else
             {
                 ar[++top] = val;
-                Console.WriteLine("Element Pushed into stack !!");
+                Console.WriteLine("Element Pushed into queue!!");
             }
 
         }
 
-        public  void Pop()
+        public void Pop()
         {
             if (top <= 0)
             {
@@ -43,17 +45,18 @@ namespace Competitive_Programs.Stack_pr
             }
             else
             {
-                Console.WriteLine("The Element poped is {0}", ar[top--]);
-                
+                Console.WriteLine("The Element poped is {0}", ar[last++]);
+
             }
         }
-        public  void display()
+        public void display()
         {
-            if(top>0) {
+            if (top > 0)
+            {
                 Console.WriteLine("The Elements in Stack is:");
-                for(int i = ar.Length; i <= 0; i--)
+                for (int i=0;i<n;i++)
                 {
-                    Console.WriteLine(ar[i]+" ");
+                    Console.WriteLine(ar[i] + " ");
                 }
             }
             else
@@ -65,10 +68,10 @@ namespace Competitive_Programs.Stack_pr
         public static void st_Main(string[] args)
         {
             int c = 1;
-           
-            MyStack st = new MyStack();
-           // st.Inc();
-           // Console.WriteLine(static.top);
+
+            Myqueue st = new Myqueue();
+            // st.Inc();
+            // Console.WriteLine(static.top);
 
             while (c != 0)
             {
@@ -76,25 +79,25 @@ namespace Competitive_Programs.Stack_pr
                 Console.WriteLine("2) POP: ");
                 Console.WriteLine("3) Display:");
                 Console.WriteLine("4) Exit:");
-               
-                string s  = Console.ReadLine();
-               
+
+                string s = Console.ReadLine();
+
                 if (s.Equals("1"))
                 {
-                    
+
                     Console.WriteLine("Enter the value to be pused:");
                     int n = Convert.ToInt32(Console.ReadLine());
                     st.Push(n);
                 }
-                else if (s.Equals("2")) 
+                else if (s.Equals("2"))
                 {
                     st.Pop();
                 }
-                else if(s.Equals("3")) 
+                else if (s.Equals("3"))
                 {
                     st.display();
                 }
-                else if( s.Equals("4"))
+                else if (s.Equals("4"))
                 {
                     c = 0;
                 }

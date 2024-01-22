@@ -20,7 +20,8 @@ namespace Competitive_Programs.String_programes
                 
                  for(int j=0; j < str_arr.Length; j++)
                 {
-                    if (str1[i].Equals(str_arr[j])){
+                    if (str1[i].Equals(str_arr[j]))
+                    {
                          count1++;
                     }
                 }

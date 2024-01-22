@@ -27,6 +27,7 @@ namespace Competitive_Programs.Searching_algos
             }
 
         }
+      
         public static void Fi_Main(string[] args)
         {
             int[] arr = { 3, 1, 5, 2, 7, 8 };

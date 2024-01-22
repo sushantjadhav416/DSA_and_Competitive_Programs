@@ -29,7 +29,7 @@ namespace Competitive_Programs.Arrays
 			{
 				sum = sum + arr[i];
 
-				if (arr[i] == 0 || sum == 0 || Is.Contains(sum))
+				if (arr[i] == 0 || sum == 0 || Is.Contains(sum)) 
 					return true;
 
 				Is.Add(sum);

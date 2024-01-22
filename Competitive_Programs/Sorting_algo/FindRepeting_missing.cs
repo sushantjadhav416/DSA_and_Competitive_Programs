@@ -37,7 +37,6 @@ namespace Competitive_Programs.Sorting_algo
 			Console.WriteLine("The repeating Element:{0}",repeating_elemnt);
 			Console.WriteLine("The missing Element:{0} -{1}:{2}",sum1,sum2,sum1-sum2);
 
-
 		}
 
 		public static void Findrp_Main(string[] args)

@@ -11,7 +11,7 @@ namespace Competitive_Programs.Searching_algos
         public static void serching(int[,] a,int n)
         {
             int c = 0;
-            int i = 0;int j = 3;
+            int i = 0;int j = a.Length-1;
 
             while(i<3 && j>=0) {
 

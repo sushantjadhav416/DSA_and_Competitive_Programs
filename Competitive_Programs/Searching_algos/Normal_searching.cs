@@ -55,7 +55,7 @@ namespace Competitive_Programs.Searching_algos
             }
         }
 
-        //Time Complexity: O(a.Length)
+        //Time Complexity: O((a.Length)**2)
         //Space complexity: O(1)
         public static void sop_Main(string[] args)
         {

@@ -250,7 +250,46 @@ namespace Competitive_Programs.Linked_List
 			return false;
 		}
 
-		public bool Delet_loop(Node h)
+        public bool Detect_loop_BTC(Node h)
+        {
+			Node first = head;
+			Node second = head;
+
+            while (first != null && second != null)
+            {
+				first  = first.next.next;
+				second = second.next;
+				if (first == second)
+					return true;
+            }
+
+			return false;
+        }
+
+        public int Find_length_off_the_loop_(Node h)
+        {
+            Node first = head;
+            Node second = head;
+			int length = 0;
+            while (first != null && first.next != null)
+            {
+                first = first.next.next;
+                second = second.next;
+                if (first == second)
+				{
+					Node temp = second;
+					do
+					{
+						temp = temp.next;
+						length++;
+					}
+					while(temp != second);
+				}   
+            }
+            return length;
+        }
+
+        public bool Delet_loop(Node h)
 		{
 			HashSet<Node> visited = new HashSet<Node>();
 
@@ -269,7 +308,7 @@ namespace Competitive_Programs.Linked_List
 	}
 	internal class Linked_list_operartion
 	{
-		public static void lk_Main(string[] args)
+		public static void Main(string[] args)
 		{
 			linkedlist ls1 = new linkedlist();
 

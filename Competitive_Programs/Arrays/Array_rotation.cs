@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//IMP for array operation
 namespace Competitive_Programs.Arrays
 {
     internal class Array_rotation
@@ -32,7 +33,7 @@ namespace Competitive_Programs.Arrays
                 arr[i] = arr[j];
                 arr[j] = temp;
                 i++;
-                j++;
+                j--;
             }
         }
         public static void rotate_bTC(int[] arr, int k)
