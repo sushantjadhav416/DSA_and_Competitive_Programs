@@ -19,7 +19,7 @@ namespace Competitive_Programs_and_DSA_Qns.Binary_tree
         public bool isBalanced(Node root)
         {
             if (root == null)
-                return true;
+                  return true;
 
             return Math.Abs(Depth(root.left) - Depth(root.right)) <= 1 && isBalanced(root.left) && isBalanced(root.right);
         }
