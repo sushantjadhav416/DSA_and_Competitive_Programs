@@ -11,7 +11,7 @@ namespace Competitive_Programs_and_DSA_Qns.Numbers_and_bit_manupaltion
         public int singleNumber_in_2rp(int[] nums)
         {
             int a = 0;
-            for (int i = 0; i < nums.length; i++)
+            for (int i = 0; i < nums.Length; i++)
             {
                 a = a ^ nums[i];
             }
@@ -38,7 +38,7 @@ namespace Competitive_Programs_and_DSA_Qns.Numbers_and_bit_manupaltion
             int ones = 0;
             int twos = 0;
 
-            for (int num:nums)
+            foreach(int num in nums)
             {
                 ones ^= (num & ~twos);
                 twos ^= (num & ~ones);
