@@ -15,7 +15,7 @@ Competitive programming is a sport where participants write efficient and correc
 
 ## Programs
 
-The repository includes programs in various programming languages, covering topics such as:
+The repository includes programs in C# programming languages, covering topics such as:
 
 - Sorting algorithms (e.g., quicksort, mergesort)
 - Searching algorithms (e.g., binary search)
