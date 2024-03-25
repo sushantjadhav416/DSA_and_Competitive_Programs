@@ -7,7 +7,7 @@ This repository contains programs related to Data Structures and Algorithms (DSA
 1. Introduction
 2. Programs
 3. Contributing
-4. License
+
 
 ## Introduction
 
