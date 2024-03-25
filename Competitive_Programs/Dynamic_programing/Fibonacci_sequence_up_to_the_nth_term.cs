@@ -69,7 +69,7 @@ namespace Competitive_Programs_and_DSA_Qns.Dynamic_programing
 
             for(int i=2;i<=n;i++)
             {
-                ans[i] = ans[i-1] + ans[i-2];
+                ans[i] = ans[i-1] + ans[i-2] % 1_000_000_007;
             }
 
             return ans[n];
