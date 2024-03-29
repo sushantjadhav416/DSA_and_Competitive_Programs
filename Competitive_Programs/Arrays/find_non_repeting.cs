@@ -25,11 +25,11 @@ namespace Competitive_Programs.Arrays
                
                 if (res == 1)
                     Console.WriteLine("The non repeting element is:{0}", arr[i]);
-
                 res = 0;
             }
         }
 
+        
         public static int non_rp_(int[] arr)
         {
             Array.Sort(arr);
@@ -44,18 +44,18 @@ namespace Competitive_Programs.Arrays
                 }
                 else
                 {
-                    if(count == 1)
+                    if (count == 1)
                     {
                         return temp;
                     }
                     temp = arr[i];
                     count = 1;
                 }
-              
             }
 
             return arr[arr.Length-1];
         }
+
         public static void nor_Main(string[] args)
         {
             int[] ar = { 4, 3, 4, 3,6 ,5, 2, 5, 6 };
