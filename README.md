@@ -22,7 +22,7 @@ The repository includes programs in C# programming languages, covering topics su
 - Dynamic programming (e.g., knapsack problem, longest common subsequence)
 - Data structures (e.g., arrays, linked lists, trees, heaps)
 
-Feel free to explore the code and contribute by adding more programs!
+Feel free to explore the code and contribute by adding more programs in different languages !
 
 ## Contributing
 
