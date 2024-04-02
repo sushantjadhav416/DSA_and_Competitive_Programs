@@ -17,12 +17,15 @@ Competitive programming is a sport where participants write efficient and correc
 
 The repository includes programs in C# programming languages, covering topics such as:
 
-- Sorting algorithms (e.g., quicksort, mergesort)
-- Searching algorithms (e.g., binary search)
-- Dynamic programming (e.g., knapsack problem, longest common subsequence)
-- Data structures (e.g., arrays, linked lists, trees, heaps)
-
-Feel free to explore the code and contribute by adding more programs!
+- Data structures 
+- Sorting algorithms
+- Sliding Window
+- BFS and DFS
+- Bit Manipulation
+- Searching algorithms 
+- Dynamic programming 
+ 
+Feel free to explore the code and contribute by adding more programs in different languages !
 
 ## Contributing
 
