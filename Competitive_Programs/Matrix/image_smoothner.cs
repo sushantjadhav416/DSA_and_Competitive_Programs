@@ -27,12 +27,12 @@ namespace Competitive_Programs_and_DSA_Qns.Matrix
                     int count = 1;
                     foreach(var direction in directions)
                     {
-                      //  int newRow = i + direction[0], newcolum = j + direction[1];
+                       //  int newRow = i + direction[0], newcolum = j + direction[1];
                        // if (newRow >= 0 && newRow < Row && newcolum >= 0 && newcolum < column)
-                        {
-                      //      sum = sum + img[newRow,newcolum];
+                        //{
+                       //     sum = sum + img[newRow,newcolum];
                             count++;
-                        }
+                      //  }
                     }
                     smooth[i,j] = sum / count;
                 }
