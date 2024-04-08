@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Competitive_Programs.String_programes
 {
+    ///VVIMP
     internal class print_all_subsequences
     {
         static List<string> subsequences = new List<string>();
