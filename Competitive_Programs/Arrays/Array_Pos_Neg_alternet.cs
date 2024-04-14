@@ -19,15 +19,15 @@ namespace Competitive_Programs_and_DSA_Qns.Arrays
             for (int i = 0; i < n; i++)
             {
                 if (arr[i] >= 0)
-                    Pos.(arr[i]);
+                    Pos.AddLast(arr[i]);
                 else
-                    Neg.offer(arr[i]);
+                    Neg.AddLast(arr[i]);
             }
 
             while (!Pos.isEmpty() || !Neg.isEmpty())
             {
                 if (!Pos.isEmpty())
-                    arr[c++] = Pos.poll();
+                    arr[c++] = Pos.Pee();
                 if (!Neg.isEmpty())
                     arr[c++] = Neg.poll();
             }

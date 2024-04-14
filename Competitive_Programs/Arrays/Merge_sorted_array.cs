@@ -27,12 +27,42 @@ namespace Competitive_Programs.Arrays
             Array.Sort(a);
         }
 
-        public static void soa_Main(string[] args)
+        public static void merge_sorted(int[] a, int[] b)
+        {
+            int i = 0;
+            int j = 0;
+            int k = 0;
+
+            while(i<a.Length && j<b.Length)
+            {
+                if (a[i] < b[j])
+                {
+                    a[k++] = a[i++];
+                }
+                else
+                {
+                    a[k++] = b[j++];
+                }
+            }
+
+            while (i<a.Length)
+            {
+                a[k++] = b[i++];
+            }
+
+            while(j<b.Length)
+            {
+                a[k++] = b[j++];
+            }
+
+        }
+
+        public static void s_Main(string[] args)
         {
             int[] arr1 = { 1, 7, 9, 3, 4, 0, 0, 0 };
             int[] arr2 = { 2, 5, 6 };
 
-            merge_so_ar(arr1, arr2);
+            merge_sorted(arr1, arr2);
         }
     }
 }
