@@ -70,7 +70,8 @@ namespace Competitive_Programs.Binary_tree
             Queue<Node> q = new Queue<Node>();
             q.Enqueue(root);
 
-            while(q.Count!=0){
+            while(q.Count!=0)
+            {
 
                 Node tempnode = q.Dequeue();
 
@@ -87,7 +88,6 @@ namespace Competitive_Programs.Binary_tree
                 }
 
             }
-
 
         }
 

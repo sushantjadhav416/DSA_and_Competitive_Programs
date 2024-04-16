@@ -33,6 +33,7 @@ namespace Competitive_Programs_and_DSA_Qns.Binary_tree
             Max_level = 0;
 
             LeftViewOp(AL, root, 1);
+
             return AL;
 
         }
