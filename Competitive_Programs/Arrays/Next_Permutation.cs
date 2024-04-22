@@ -10,7 +10,7 @@ namespace Competitive_Programs_and_DSA_Qns.Arrays
     {
         public void nextPermutation(int[] nums)
         {
-            final int n = nums.length;
+             int n = nums.Length;
 
             int i;
             for (i = n - 2; i >= 0; --i)
@@ -39,7 +39,7 @@ namespace Competitive_Programs_and_DSA_Qns.Arrays
 
         public void Swap(int[] nums, int i, int j)
         {
-            final int temp = nums[i];
+            int temp = nums[i];
             nums[i] = nums[j];
             nums[j] = temp;
         }
