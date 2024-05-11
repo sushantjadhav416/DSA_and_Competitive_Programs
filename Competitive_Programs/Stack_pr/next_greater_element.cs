@@ -49,10 +49,12 @@ namespace Competitive_Programs_and_DSA_Qns.Stack_pr
 
             foreach(int num in nums1)
             {
-                if (nextNum.ContainsKey(num))
+                if (nextNum.ContainsKey(num)){
                    // target[k++] = nextNum.;
-                else
+                }
+                else{
                     target[k++] = -1;
+                }
             }
 
             return target;
