@@ -8,45 +8,45 @@ namespace Competitive_Programs_and_DSA_Qns.Binary_tree
 {
     internal class Reverse_Level_Order_Traversal
     {
-        public ArrayList<Integer> reverseLevelOrder(Node node) 
+        public List<int> reverseLevelOrder(Node node) 
        {
           // code here
         
-        ArrayList<Integer> Ls = new ArrayList<Integer>();
+        List<int> Ls = new List<int>();
         
         if(node == null)
         {
             return Ls;
         }
         
-        Stack<Integer> stk = new Stack<Integer>();
+        Stack<int> stk = new Stack<int>();
         
-        Queue<Node> q = new LinkedList<Node>();
+        Queue<Node> q = new Queue<Node>();
         
-        q.add(node);
+        q.Enqueue(node);
         
-        while(!q.isEmpty())
+        while(q.Count()!=0)
         {
-            Node tempNode = q.poll();
+            Node tempNode = q.Peek();
             
-            stk.push(tempNode.data);
+            stk.Push(tempNode.data);
             
             if(tempNode.right!=null)
             {
-               q.add(tempNode.right);
+               q.Enqueue(tempNode.right);
             }
             
             if(tempNode.left!=null)
             {
-               q.add(tempNode.left);
+               q.Enqueue(tempNode.left);
             }
             
         }
         
         
-        while(!stk.isEmpty())
+        while(stk.Count()!=0)
         {
-            Ls.add(stk.pop());
+            Ls.Add(stk.Pop());
         }
         
            return Ls;

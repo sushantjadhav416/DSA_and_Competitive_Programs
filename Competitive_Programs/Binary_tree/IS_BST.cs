@@ -2,19 +2,19 @@ namespace Competitive_Programs_and_DSA_Qns.Binary_tree
 {
     internal class IS_BST
     {
-       public boolean isValidBST(TreeNode root ,long minval,long maxval)
+       public bool isValidBST(Node root ,long minval,long maxval)
     {
          if(root == null)
             return true;
 
-         if(root.val >= maxval || root.val <= minval)
+         if(root.data >= maxval || root.data <= minval)
            return false;
         
-        return isValidBST(root.left,minval,root.val) && isValidBST(root.right,root.val,maxval);
+        return isValidBST(root.left,minval,root.data) && isValidBST(root.right,root.data,maxval);
 
         
     }
-    public boolean isValidBST(TreeNode root) {
+    public bool isValidBST(Node root) {
 
         // if(root == null)
         //     return true;
@@ -28,7 +28,7 @@ namespace Competitive_Programs_and_DSA_Qns.Binary_tree
         // return ((root.left.val < root.val) && (root.right.val > root.val)) && isValidBST(root.left) && isValidBST(root.right);
 
         
-        return isValidBST(root,Long.MIN_VALUE,Long.MAX_VALUE) ;
+        return isValidBST(root,long.MinValue,long.MaxValue) ;
         
     }
     }
