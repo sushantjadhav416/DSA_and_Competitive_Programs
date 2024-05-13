@@ -18,10 +18,10 @@ namespace Competitive_Programs.Arrays
                 {
                     Console.WriteLine(arr[i]);
                 }
-
             }
         }
-
+             
+        
         public static void d_Main(string[] args)
         {
             int[] arr = { 1, 2, 3,4,5,1,7,8,9,2,4};  
