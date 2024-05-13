@@ -35,7 +35,7 @@ namespace Competitive_Programs.String_programes
 
           if(index!=-1)
          {
-            return new StringBuilder(word.Substring(0,index+1)).Reverse().ToString() + word.Substring(index+1);
+            return new StringBuilder(word.Substring(0,index+1)).ToString() + word.Substring(index+1);
          }
 
      
