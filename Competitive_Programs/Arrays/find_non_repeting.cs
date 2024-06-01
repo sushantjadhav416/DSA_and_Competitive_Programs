@@ -56,6 +56,37 @@ namespace Competitive_Programs.Arrays
             return arr[arr.Length-1];
         }
 
+       public int[] singleNumber(int[] nums) 
+       {
+        int[] elements = new int[2];
+
+        HashSet<int> HS = new HashSet<int>();
+        int j = 0;
+        for(int i=0;i<nums.Length;i++)
+        {
+           if(HS.Contains(nums[i]))
+           {
+              HS.Remove(nums[i]);
+           }
+           else
+           {
+              HS.Add(nums[i]);
+           }
+        }
+
+
+        foreach(int num in HS)
+        {
+            elements[j++]=num;
+        }
+
+        return elements;
+
+
+       
+       }
+
+
         public static void nor_Main(string[] args)
         {
             int[] ar = { 4, 3, 4, 3,6 ,5, 2, 5, 6 };
